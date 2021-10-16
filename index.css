@@ -23,6 +23,9 @@ h2::first-letter{
 .navbar{
   width: 100%;
 }
+.span::first-letter{
+ text-transform:lowercase,
+}
 .nav-link::first-letter{
   text-transform: uppercase;
 }
