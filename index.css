@@ -5,6 +5,7 @@ a, a:hover, a:focus, a:active{
   text-decoration: none;
   color: inherit;
 }
+
 .firstIntro{
   margin-top: 10%;
   text-align: center;
@@ -16,6 +17,9 @@ a, a:hover, a:focus, a:active{
 }
 .intro a:hover{
   color:#F3F2C9;
+}
+.dropdown-menu{
+  background-color:#F3F2C9; 
 }
 .btn-outline-project{
   color: #F3F2C9; 
