@@ -656,15 +656,18 @@
 	var data = [trace1];
 
 	var layout = {
+
+title:  {
+    		text:'Programming Languages/Skills',
+			font: { size: 50 }
+		},
+
 		plot_bgcolor:'#003638',
     	paper_bgcolor:'#003638',
     	font: { color: "#fff", family: "Ubuntu" },
-       xaxis:{ title:’Programming Languages/Skills’},
+       xaxis:{ title:’Programming language’},
 yaxis:{ title:’Years of experience’},
-		title:  {
-    		text:'Programming Languages/Skills',
-			font: { size: 50 }
-		}
+		
 	};
 	var config = {responsive: true};
 	Plotly.newPlot('languages', data, layout,config );
