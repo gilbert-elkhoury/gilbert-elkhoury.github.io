@@ -646,7 +646,7 @@
 <script type="text/javascript">
 	var trace1 = {
   		x: ['JAVA', 'Python', 'BASH', 'R', 'swift','Kotlin','JQuery','Nodejs','SQL','PHP','CSS3','HTML5','Bootstrap'],
-  		y: [25, 23, 20, 23, 18,15,24,19,24,20,25,25,25],
+  		y: [3, 3, 2, 2, 1,0.5,2,1,3,3,3,3,2],
   		marker:{
     		color: ['#F3F2C9', '#F3F2C9', '#F3F2C9', '#F3F2C9', '#F3F2C9', '#F3F2C9', '#F3F2C9', '#F3F2C9', '#F3F2C9', '#F3F2C9', '#F3F2C9', '#F3F2C9', '#F3F2C9']
   		},
@@ -659,10 +659,22 @@
 		plot_bgcolor:'#003638',
     	paper_bgcolor:'#003638',
     	font: { color: "#fff", family: "Ubuntu" },
-		title:  {
-    		text:'Programmiersprachen/Kenntnisse',
-			font: { size: 50 }
-		}
+		
+		xaxis: {
+        automargin: true,
+        tickangle: 90,
+        title: {
+          text: "Sprache",
+          standoff: 20
+        }},
+        yaxis: {
+        automargin: true,
+        tickangle: 90,
+        title: {
+          text: "Jahrelange Erfahrung",
+          standoff: 20
+        }},
+		title: 'Programmiersprachen Erfahrung',
 	};
 	var config = {responsive: true};
 	Plotly.newPlot('languages', data, layout,config );
